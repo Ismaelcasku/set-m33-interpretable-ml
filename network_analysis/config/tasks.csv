@@ -1,0 +1,12 @@
+key,species,species_label,charge,pool,threshold,training_pool,prediction
+ecoli_4plus,ecoli,E. coli,4,10,0.55,Training/Subsets pool descriptors/ecoli/subset4/ecoli_training_pool_10.csv,Test/Analogs predictions/ecoli/SETecol_filtrado_4_pool10_con_prediccion.csv
+ecoli_5plus,ecoli,E. coli,5,10,0.70,Training/Subsets pool descriptors/ecoli/subset5/ecoli5_training_pool_10.csv,Test/Analogs predictions/ecoli/SETecol_filtrado_5_pool10_con_prediccion.csv
+ecoli_6plus,ecoli,E. coli,6,10,0.70,Training/Subsets pool descriptors/ecoli/subset6/ecoli6_training_pool_10.csv,Test/Analogs predictions/ecoli/SETecol_filtrado_6_pool10_con_prediccion.csv
+ecoli_7plus,ecoli,E. coli,7,20,0.70,Training/Subsets pool descriptors/ecoli/subset7/ecoli7_training_pool_20.csv,Test/Analogs predictions/ecoli/SETecol_filtrado_7_pool20_con_prediccion.csv
+paeruginosa_4plus,paeruginosa,P. aeruginosa,4,10,0.80,Training/Subsets pool descriptors/paeruginosa/subset4/aeruginosa4_training_pool_10.csv,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_4_pool10_con_prediccion.csv
+paeruginosa_5plus,paeruginosa,P. aeruginosa,5,20,0.80,Training/Subsets pool descriptors/paeruginosa/subset5/aeruginosa5_training_pool_20.csv,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_5_pool20_con_prediccion.csv
+paeruginosa_6plus,paeruginosa,P. aeruginosa,6,10,0.75,Training/Subsets pool descriptors/paeruginosa/subset6/aeruginosa6_training_pool_10.csv,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_6_pool10_con_prediccion.csv
+paeruginosa_7plus,paeruginosa,P. aeruginosa,7,0,0.70,Training/Subsets pool descriptors/paeruginosa/subset7/aeruginosa7_training_pool_0.csv,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_7_pool0_con_prediccion.csv
+kpneumoniae_4plus,kpneumoniae,K. pneumoniae,4,10,0.65,Training/Subsets pool descriptors/kpneumoniae/subset4/kleb4_training_pool_10.csv,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_4_pool10_con_prediccion.csv
+kpneumoniae_5plus,kpneumoniae,K. pneumoniae,5,60,0.65,Training/Subsets pool descriptors/kpneumoniae/subset5/kleb5_training_pool_60.csv,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_5_pool60_con_prediccion.csv
+kpneumoniae_6plus,kpneumoniae,K. pneumoniae,6,60,0.60,Training/Subsets pool descriptors/kpneumoniae/subset6/kleb6_training_pool_60.csv,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_6_pool60_con_prediccion.csv

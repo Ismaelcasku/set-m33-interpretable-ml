@@ -1,0 +1,67 @@
+figure,figure_type,scope,source_data,encoded_variable
+figures/shap_top20/individual/shap_top20_ecoli_4plus.png,SHAP top-20,ecoli_4plus,source_data/shap_top20/shap_top20_ecoli_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_4plus.pdf,SHAP top-20,ecoli_4plus,source_data/shap_top20/shap_top20_ecoli_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_4plus.svg,SHAP top-20,ecoli_4plus,source_data/shap_top20/shap_top20_ecoli_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_5plus.png,SHAP top-20,ecoli_5plus,source_data/shap_top20/shap_top20_ecoli_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_5plus.pdf,SHAP top-20,ecoli_5plus,source_data/shap_top20/shap_top20_ecoli_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_5plus.svg,SHAP top-20,ecoli_5plus,source_data/shap_top20/shap_top20_ecoli_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_6plus.png,SHAP top-20,ecoli_6plus,source_data/shap_top20/shap_top20_ecoli_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_6plus.pdf,SHAP top-20,ecoli_6plus,source_data/shap_top20/shap_top20_ecoli_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_6plus.svg,SHAP top-20,ecoli_6plus,source_data/shap_top20/shap_top20_ecoli_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_7plus.png,SHAP top-20,ecoli_7plus,source_data/shap_top20/shap_top20_ecoli_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_7plus.pdf,SHAP top-20,ecoli_7plus,source_data/shap_top20/shap_top20_ecoli_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_ecoli_7plus.svg,SHAP top-20,ecoli_7plus,source_data/shap_top20/shap_top20_ecoli_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_4plus.png,SHAP top-20,paeruginosa_4plus,source_data/shap_top20/shap_top20_paeruginosa_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_4plus.pdf,SHAP top-20,paeruginosa_4plus,source_data/shap_top20/shap_top20_paeruginosa_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_4plus.svg,SHAP top-20,paeruginosa_4plus,source_data/shap_top20/shap_top20_paeruginosa_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_5plus.png,SHAP top-20,paeruginosa_5plus,source_data/shap_top20/shap_top20_paeruginosa_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_5plus.pdf,SHAP top-20,paeruginosa_5plus,source_data/shap_top20/shap_top20_paeruginosa_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_5plus.svg,SHAP top-20,paeruginosa_5plus,source_data/shap_top20/shap_top20_paeruginosa_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_6plus.png,SHAP top-20,paeruginosa_6plus,source_data/shap_top20/shap_top20_paeruginosa_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_6plus.pdf,SHAP top-20,paeruginosa_6plus,source_data/shap_top20/shap_top20_paeruginosa_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_6plus.svg,SHAP top-20,paeruginosa_6plus,source_data/shap_top20/shap_top20_paeruginosa_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_7plus.png,SHAP top-20,paeruginosa_7plus,source_data/shap_top20/shap_top20_paeruginosa_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_7plus.pdf,SHAP top-20,paeruginosa_7plus,source_data/shap_top20/shap_top20_paeruginosa_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_paeruginosa_7plus.svg,SHAP top-20,paeruginosa_7plus,source_data/shap_top20/shap_top20_paeruginosa_7plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_4plus.png,SHAP top-20,kpneumoniae_4plus,source_data/shap_top20/shap_top20_kpneumoniae_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_4plus.pdf,SHAP top-20,kpneumoniae_4plus,source_data/shap_top20/shap_top20_kpneumoniae_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_4plus.svg,SHAP top-20,kpneumoniae_4plus,source_data/shap_top20/shap_top20_kpneumoniae_4plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_5plus.png,SHAP top-20,kpneumoniae_5plus,source_data/shap_top20/shap_top20_kpneumoniae_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_5plus.pdf,SHAP top-20,kpneumoniae_5plus,source_data/shap_top20/shap_top20_kpneumoniae_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_5plus.svg,SHAP top-20,kpneumoniae_5plus,source_data/shap_top20/shap_top20_kpneumoniae_5plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_6plus.png,SHAP top-20,kpneumoniae_6plus,source_data/shap_top20/shap_top20_kpneumoniae_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_6plus.pdf,SHAP top-20,kpneumoniae_6plus,source_data/shap_top20/shap_top20_kpneumoniae_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/individual/shap_top20_kpneumoniae_6plus.svg,SHAP top-20,kpneumoniae_6plus,source_data/shap_top20/shap_top20_kpneumoniae_6plus.csv,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_ecoli_composite.png,SHAP top-20 composite,ecoli,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_ecoli_composite.pdf,SHAP top-20 composite,ecoli,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_ecoli_composite.svg,SHAP top-20 composite,ecoli,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_paeruginosa_composite.png,SHAP top-20 composite,paeruginosa,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_paeruginosa_composite.pdf,SHAP top-20 composite,paeruginosa,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_paeruginosa_composite.svg,SHAP top-20 composite,paeruginosa,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_kpneumoniae_composite.png,SHAP top-20 composite,kpneumoniae,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_kpneumoniae_composite.pdf,SHAP top-20 composite,kpneumoniae,,relative mean absolute SHAP
+figures/shap_top20/composite/shap_top20_kpneumoniae_composite.svg,SHAP top-20 composite,kpneumoniae,,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_ecoli.png,SHAP heatmap,ecoli,source_data/shap_heatmaps/shap_heatmap_top10_ecoli.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_ecoli.pdf,SHAP heatmap,ecoli,source_data/shap_heatmaps/shap_heatmap_top10_ecoli.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_ecoli.svg,SHAP heatmap,ecoli,source_data/shap_heatmaps/shap_heatmap_top10_ecoli.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_paeruginosa.png,SHAP heatmap,paeruginosa,source_data/shap_heatmaps/shap_heatmap_top10_paeruginosa.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_paeruginosa.pdf,SHAP heatmap,paeruginosa,source_data/shap_heatmaps/shap_heatmap_top10_paeruginosa.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_paeruginosa.svg,SHAP heatmap,paeruginosa,source_data/shap_heatmaps/shap_heatmap_top10_paeruginosa.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_kpneumoniae.png,SHAP heatmap,kpneumoniae,source_data/shap_heatmaps/shap_heatmap_top10_kpneumoniae.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_kpneumoniae.pdf,SHAP heatmap,kpneumoniae,source_data/shap_heatmaps/shap_heatmap_top10_kpneumoniae.csv,relative mean absolute SHAP
+figures/shap_heatmaps/individual/shap_heatmap_top10_kpneumoniae.svg,SHAP heatmap,kpneumoniae,source_data/shap_heatmaps/shap_heatmap_top10_kpneumoniae.csv,relative mean absolute SHAP
+figures/shap_heatmaps/composite/Figure_2_SHAP_heatmaps.png,Figure 2 SHAP heatmaps,all species,,relative mean absolute SHAP
+figures/shap_heatmaps/composite/Figure_2_SHAP_heatmaps.pdf,Figure 2 SHAP heatmaps,all species,,relative mean absolute SHAP
+figures/shap_heatmaps/composite/Figure_2_SHAP_heatmaps.svg,Figure 2 SHAP heatmaps,all species,,relative mean absolute SHAP
+figures/historical_umap/individual/historical_umap_ecoli.png,Historical grouped Euclidean UMAP,ecoli,source_data/historical_umap/historical_umap_ecoli.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_ecoli.pdf,Historical grouped Euclidean UMAP,ecoli,source_data/historical_umap/historical_umap_ecoli.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_ecoli.svg,Historical grouped Euclidean UMAP,ecoli,source_data/historical_umap/historical_umap_ecoli.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_paeruginosa.png,Historical grouped Euclidean UMAP,paeruginosa,source_data/historical_umap/historical_umap_paeruginosa.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_paeruginosa.pdf,Historical grouped Euclidean UMAP,paeruginosa,source_data/historical_umap/historical_umap_paeruginosa.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_paeruginosa.svg,Historical grouped Euclidean UMAP,paeruginosa,source_data/historical_umap/historical_umap_paeruginosa.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_kpneumoniae.png,Historical grouped Euclidean UMAP,kpneumoniae,source_data/historical_umap/historical_umap_kpneumoniae.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_kpneumoniae.pdf,Historical grouped Euclidean UMAP,kpneumoniae,source_data/historical_umap/historical_umap_kpneumoniae.csv.gz,cationic charge
+figures/historical_umap/individual/historical_umap_kpneumoniae.svg,Historical grouped Euclidean UMAP,kpneumoniae,source_data/historical_umap/historical_umap_kpneumoniae.csv.gz,cationic charge
+figures/historical_umap/composite/Figure_3_historical_grouped_euclidean_UMAP.png,Figure 3 historical grouped Euclidean UMAP,all species,,cationic charge
+figures/historical_umap/composite/Figure_3_historical_grouped_euclidean_UMAP.pdf,Figure 3 historical grouped Euclidean UMAP,all species,,cationic charge
+figures/historical_umap/composite/Figure_3_historical_grouped_euclidean_UMAP.svg,Figure 3 historical grouped Euclidean UMAP,all species,,cationic charge

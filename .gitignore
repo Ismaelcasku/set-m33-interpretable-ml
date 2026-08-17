@@ -1,0 +1,26 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# Large scientific inputs/results belong on Zenodo.
+leakage_controlled_validation/input/*
+!leakage_controlled_validation/input/.gitkeep
+leakage_controlled_validation/results/*
+!leakage_controlled_validation/results/.gitkeep
+leakage_controlled_validation/logs/*
+!leakage_controlled_validation/logs/.gitkeep
+leakage_controlled_validation/software/*
+!leakage_controlled_validation/software/.gitkeep
+post_weka_robustness/results/*
+!post_weka_robustness/results/.gitkeep
+post_weka_robustness/data/Supplementary Data/
+network_analysis/results/*
+!network_analysis/results/.gitkeep

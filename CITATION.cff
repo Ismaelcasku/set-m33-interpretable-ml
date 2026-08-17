@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated SET-M33 manuscript and Zenodo study-data archive."
+title: "SET-M33 interpretable machine-learning analyses"
+type: software
+authors:
+  - family-names: "Castañón"
+    given-names: "Ismael"
+    orcid: "https://orcid.org/0009-0005-3865-6392"
+version: "1.0.0"
+date-released: "2026-08-17"
+keywords:
+  - antimicrobial peptides
+  - interpretable machine learning
+  - SHAP
+  - UMAP
+  - Random Forest
+  - reproducibility

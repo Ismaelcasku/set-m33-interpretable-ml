@@ -1,0 +1,48 @@
+# Absolute path to the extracted "Supplementary Data" directory. It must
+# contain Test/Analogs predictions/. SET_M33_DATA_ROOT overrides this value.
+data_root: null
+results_root: results
+base_seed: 42
+
+surrogate:
+  n_estimators: 100
+  max_depth: 10
+  n_splits: 5
+  n_repeats: 10
+  rf_seed: 42
+  candidate_bootstrap_replicates: 2000
+
+shap:
+  rf_seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  bootstrap_replicates: 200
+  bootstrap_chunk_size: 10
+  evaluation_max_rows: 1000
+  top_k: 10
+
+hspn:
+  threshold_sweep: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95]
+  adjacent_delta: 0.05
+  louvain_seeds: 100
+
+umap:
+  # Historical descriptor grouping recovered from the executed notebooks.
+  descriptor_group_k:
+    ecoli: 6
+    paeruginosa: 6
+    kpneumoniae: 3
+  kmeans_seed: 42
+  kmeans_n_init: 10
+  n_neighbors: [5, 15, 50]
+  min_dist: [0.0, 0.1, 0.5]
+  seeds: [42, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  metric: euclidean
+  primary_n_neighbors: 15
+  primary_min_dist: 0.1
+  primary_seed: 42
+  knn_k: 15
+  # null uses the complete smallest charge library (127/38/165 rows per charge
+  # for E. coli/P. aeruginosa/K. pneumoniae), matching the size-matching rule.
+  metric_max_rows_per_charge: null
+  metric_bootstrap_replicates: 200
+  hdbscan_min_cluster_size: 5
+  hdbscan_min_samples: 5

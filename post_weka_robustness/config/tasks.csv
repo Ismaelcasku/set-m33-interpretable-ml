@@ -1,0 +1,12 @@
+task_index,key,species,species_label,charge,pool,threshold,prediction
+0,ecoli_4plus,ecoli,E. coli,4,10,0.55,Test/Analogs predictions/ecoli/SETecol_filtrado_4_pool10_con_prediccion.csv
+1,ecoli_5plus,ecoli,E. coli,5,10,0.70,Test/Analogs predictions/ecoli/SETecol_filtrado_5_pool10_con_prediccion.csv
+2,ecoli_6plus,ecoli,E. coli,6,10,0.70,Test/Analogs predictions/ecoli/SETecol_filtrado_6_pool10_con_prediccion.csv
+3,ecoli_7plus,ecoli,E. coli,7,20,0.70,Test/Analogs predictions/ecoli/SETecol_filtrado_7_pool20_con_prediccion.csv
+4,paeruginosa_4plus,paeruginosa,P. aeruginosa,4,10,0.80,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_4_pool10_con_prediccion.csv
+5,paeruginosa_5plus,paeruginosa,P. aeruginosa,5,20,0.80,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_5_pool20_con_prediccion.csv
+6,paeruginosa_6plus,paeruginosa,P. aeruginosa,6,10,0.75,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_6_pool10_con_prediccion.csv
+7,paeruginosa_7plus,paeruginosa,P. aeruginosa,7,0,0.70,Test/Analogs predictions/paeruginosa/SETaeruginosa_filtrado_7_pool0_con_prediccion.csv
+8,kpneumoniae_4plus,kpneumoniae,K. pneumoniae,4,10,0.65,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_4_pool10_con_prediccion.csv
+9,kpneumoniae_5plus,kpneumoniae,K. pneumoniae,5,60,0.65,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_5_pool60_con_prediccion.csv
+10,kpneumoniae_6plus,kpneumoniae,K. pneumoniae,6,60,0.60,Test/Analogs predictions/kpneumoniae/SETklebsiella_filtrado_6_pool60_con_prediccion.csv

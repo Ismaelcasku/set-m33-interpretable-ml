@@ -1,0 +1,8 @@
+.venv/
+logs/*.out
+logs/*.err
+results/*
+!results/.gitkeep
+config/robustness.local.yml
+.cache/
+results_smoke/

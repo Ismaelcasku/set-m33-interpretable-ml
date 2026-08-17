@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "audit_name": "leakage_audit_v1",
+  "branches": [
+    "legacy_global",
+    "nested_matched"
+  ],
+  "exclude_nonpositive_mic": true,
+  "selection_target": "raw_mic",
+  "model_target": "log10_mic",
+  "inner_selection_folds": 5,
+  "inner_selection_seed": 1,
+  "pool_labels": [
+    0,
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90
+  ],
+  "pool_rule": "selection_frequency_percent_strictly_greater_than_label",
+  "historical_pool_labels": {
+    "ecoli_4plus": 10,
+    "ecoli_5plus": 10,
+    "ecoli_6plus": 10,
+    "ecoli_7plus": 20,
+    "paeruginosa_4plus": 10,
+    "paeruginosa_5plus": 20,
+    "paeruginosa_6plus": 10,
+    "paeruginosa_7plus": 0,
+    "kpneumoniae_4plus": 10,
+    "kpneumoniae_5plus": 60,
+    "kpneumoniae_6plus": 60
+  },
+  "historical_pool_size_ranges": {
+    "ecoli": {
+      "pool_0": [
+        141,
+        167
+      ],
+      "pool_90": [
+        5,
+        9
+      ]
+    },
+    "paeruginosa": {
+      "pool_0": [
+        122,
+        176
+      ],
+      "pool_90": [
+        3,
+        8
+      ]
+    },
+    "kpneumoniae": {
+      "pool_0": [
+        106,
+        143
+      ],
+      "pool_90": [
+        3,
+        9
+      ]
+    }
+  },
+  "operational_negative_mic": 10000.0,
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20260812
+}

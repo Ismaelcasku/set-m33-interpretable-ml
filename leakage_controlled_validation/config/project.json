@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "datasets": [
+    {"name": "ecoli_4plus", "file": "ecoli_descriptors_cleaned_4+.csv"},
+    {"name": "ecoli_5plus", "file": "ecoli_descriptors_cleaned_5+.csv"},
+    {"name": "ecoli_6plus", "file": "ecoli_descriptors_cleaned_6+.csv"},
+    {"name": "ecoli_7plus", "file": "ecoli_descriptors_cleaned_7+.csv"},
+    {"name": "paeruginosa_4plus", "file": "SETpseu_4_clean_4+.csv"},
+    {"name": "paeruginosa_5plus", "file": "SETpseu_4_clean_5+.csv"},
+    {"name": "paeruginosa_6plus", "file": "SETpseu_4_clean_6+.csv"},
+    {"name": "paeruginosa_7plus", "file": "SETpseu_4_clean_7+.csv"},
+    {"name": "kpneumoniae_4plus", "file": "SETkleb_4_clean_4+.csv"},
+    {"name": "kpneumoniae_5plus", "file": "SETkleb_4_clean_5+.csv"},
+    {"name": "kpneumoniae_6plus", "file": "SETkleb_4_clean_6+.csv"}
+  ],
+  "id_column": "ID",
+  "target_column": "MIC",
+  "target_transform": "none",
+  "csv_separator": ",",
+  "missing_target_policy": "exclude",
+  "n_splits": 5,
+  "seeds": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "n_trees": 100,
+  "bootstrap_reps": 5000,
+  "bootstrap_seed": 20260811,
+  "save_fold_models": false,
+  "train_final_models": true,
+  "weka": {
+    "jar": "software/weka.jar",
+    "expected_version": "3.8.6",
+    "cfs_spec": "weka.attributeSelection.CfsSubsetEval",
+    "best_first_spec": "weka.attributeSelection.BestFirst",
+    "random_forest_class": "weka.classifiers.trees.RandomForest"
+  }
+}

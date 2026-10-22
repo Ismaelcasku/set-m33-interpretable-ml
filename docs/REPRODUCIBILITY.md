@@ -1,15 +1,10 @@
-# Reproducibility hierarchy
+# Reproducing the analyses
 
-Use the following hierarchy when reproducing the manuscript:
+1. Obtain the data packages listed in `DATA_AND_ZENODO.md`.
+2. Install the environment specified by each module.
+3. Run the surrogate/SHAP/UMAP and S2 commands in `../post_weka_robustness/REPRODUCING_ANALYSES.md`.
+4. Run network selection against its candidate-selection data root using `../network_analysis/README.md`.
+5. Run the paired leakage audit using its module README.
+6. Generate publication figures using `../publication_figures/README.md`.
 
-1. **Canonical analyses**
-   - `network_analysis/` for physicochemical similarity networks and candidate prioritization
-   - `leakage_controlled_validation/` for the paired leakage audit
-   - `post_weka_robustness/` for surrogate fidelity, SHAP robustness, HSPN sensitivity, historical grouped-SHAP UMAP and UMAP robustness
-2. **Publication rendering**
-   - `publication_figures/` for Figures 2/3 and supplementary SHAP plots
-   - `docs/FIGURE_1_GEPHI.md` for the final Figure 1 rendering step in Gephi
-
-The repository intentionally contains only the code paths needed to reproduce the analyses reported in the revised manuscript. Earlier exploratory or superseded end-to-end workflows are not distributed here.
-
-The final UMAP robustness implementation evaluates geometry fidelity on all candidates while reserving the fixed charge-balanced subset for charge-dependent silhouettes and HDBSCAN stability.
+Configuration files specify model parameters, selected pools, similarity thresholds and sampling seeds. Task completion records include input fingerprints and output checksums.

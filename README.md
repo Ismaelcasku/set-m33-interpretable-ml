@@ -1,109 +1,31 @@
 # SET-M33 interpretable machine-learning analyses
 
-Code supporting the manuscript **“Interpretable machine learning identifies
-target-dependent predictive patterns for a dendrimeric antimicrobial peptide.”**
+Code for “Interpretable machine learning identifies target-dependent predictive patterns for a dendrimeric antimicrobial peptide.”
 
-This repository is the paper-aligned **code release**. Large descriptor matrices,
-WEKA artifacts and numerical analysis outputs are kept in the study archive on
-Zenodo (current record: **10.5281/zenodo.20610591**) and will be updated with the
-final revision outputs. GitHub contains executable code, configuration, tests,
-figure-generation material and provenance documentation.
+## Contents
 
-## Repository structure
+- `network_analysis/`: physicochemical similarity networks and candidate selection.
+- `leakage_controlled_validation/`: paired global and nested feature-selection validation.
+- `post_weka_robustness/`: surrogate fidelity, SHAP, grouped-SHAP UMAP and robustness analyses.
+- `post_weka_robustness/s2_tables/`: effective dimensionality and charge-dependent PCA/UMAP metrics for Tables S2.1–S2.3.
+- `publication_figures/`: figure generator, plotting data and rendered figures.
 
-```text
-set-m33-interpretable-ml/
-├── network_analysis/
-│   └── physicochemical similarity networks and candidate prioritization
-├── leakage_controlled_validation/
-│   └── paired legacy_global vs nested_matched WEKA leakage audit
-├── post_weka_robustness/
-│   └── surrogate fidelity, SHAP robustness, HSPN sensitivity and historical UMAP
-├── publication_figures/
-│   └── exact Figure 2/Figure 3 plotting package, source data and rendered outputs
-└── docs/
-    └── data boundary, manuscript-code map, Figure 1/Gephi note and release guide
-```
+## Data
 
-## Canonical analyses for the revised manuscript
+Study data and numerical outputs: https://doi.org/10.5281/zenodo.20530642
 
-### 1. Physicochemical similarity networks
+Interpretability includes 3,918 E. coli analogs (1,874 at charge +5), 5,383 P. aeruginosa analogs and 1,174 K. pneumoniae analogs. Candidate-selection inputs are available in package 02 at https://doi.org/10.5281/zenodo.22014734. These two analyses use separate data roots.
 
-`network_analysis/` reconstructs the 11 charge-defined similarity networks from
-StandardScaler-normalized selected descriptors and cosine similarity, exports
-Gephi-compatible node/edge tables, calculates graph annotations, and reproduces
-the candidate-prioritization rule used in the study. The final Figure 1 layout remains a
-Gephi visualization step; see `docs/FIGURE_1_GEPHI.md`.
+See `docs/DATA_AND_ZENODO.md` for file locations and `post_weka_robustness/REPRODUCING_ANALYSES.md` for execution commands.
 
-### 2. Leakage-controlled validation
+## Methods
 
-`leakage_controlled_validation/` contains the paired 11-dataset audit reported
-in the revised manuscript. The public analysis has only two branches:
+Random Forest surrogates are fitted to WEKA predictions. TreeSHAP provides descriptor-level attributions. Descriptors are grouped from their charge-dependent mean signed SHAP profiles using zero filling, StandardScaler and KMeans (six groups for E. coli and P. aeruginosa; three for K. pneumoniae). Each candidate is represented by its within-group mean signed SHAP and projected by Euclidean UMAP.
 
-- `legacy_global`
-- `nested_matched`
+UMAP geometry metrics use the complete candidate library. Parameter-grid charge metrics use a fixed balanced subset. Tables S2.1–S2.3 use 20 balanced draws per charge; their calculation is specified in `post_weka_robustness/s2_tables/METHODS.md`.
 
-Both use identical 10-seed × 5-fold outer partitions. Historical pool levels are
-fixed per target/charge dataset, including **pool60 for K. pneumoniae +5 and +6**.
-The primary comparison therefore contains **1,100 outer Random Forest fits**.
+The leakage audit compares `legacy_global` and `nested_matched` on 11 datasets, ten seeds and five folds: 1,100 outer Random Forest fits. Network construction, thresholds and candidate ranking are described in `network_analysis/README.md`.
 
-### 3. Surrogate SHAP and historical UMAP robustness
+## Citation and license
 
-`post_weka_robustness/` starts from the archived WEKA candidate predictions. The
-Python Random Forest is a surrogate of the WEKA `predicted` column; SHAP explains
-that surrogate rather than the serialized WEKA trees or a causal biological
-mechanism.
-
-The historical dimensionality workflow is:
-
-```text
-charge-specific signed SHAP
-→ descriptor × charge mean signed SHAP
-→ zero-fill absent descriptor/charge combinations
-→ StandardScaler
-→ KMeans descriptor groups (6 / 6 / 3)
-→ candidate-level mean signed SHAP within each group
-→ unscaled Euclidean UMAP
-```
-
-For the final robustness analysis, trustworthiness, exact 15-neighbor
-preservation and between-run neighborhood overlap are evaluated on the **complete
-candidate library**. Charge-state silhouettes and HDBSCAN stability are evaluated
-separately on a **fixed charge-balanced subset**.
-
-### 4. Publication figures
-
-`publication_figures/` preserves the script used to generate Figure 2 (SHAP
-heatmaps), Figure 3 (historical grouped Euclidean UMAP) and the supplementary
-SHAP top-20 panels. It also contains the exact plotting source tables and the
-rendered PNG/PDF/SVG outputs. The script does not refit models, recalculate SHAP
-or rerun UMAP.
-
-## Data and results
-
-The study data archive is currently available at Zenodo DOI
-**10.5281/zenodo.20610591**. See `docs/DATA_AND_ZENODO.md` for the intended final
-GitHub/Zenodo boundary and expected data layouts.
-
-## Reproducibility and interpretation boundary
-
-Each executable module has its own README, configuration and tests. The analyses
-are deliberately separated because they have different dependencies and because
-some stages are historical reconstructions rather than one monolithic current
-pipeline.
-
-SHAP values are predictive attributions of surrogate models. Similarity-network
-communities, UMAP neighborhoods and HDBSCAN clusters are algorithmic
-representations. None of these outputs should be presented as direct evidence of
-causal peptide–membrane mechanisms or biological classes.
-
-## Citation
-
-Use `CITATION.cff` for the software metadata. Please also cite the associated
-manuscript and the Zenodo study-data record.
-
-## License
-
-No explicit open-source software license is assigned in this release. The code
-is therefore distributed under the default copyright terms unless the authors
-add a license before public release.
+Software metadata are provided in `CITATION.cff`. Cite the associated manuscript and study-data archive. No explicit software license is assigned.

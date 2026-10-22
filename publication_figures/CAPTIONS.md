@@ -1,4 +1,4 @@
-# Draft figure captions
+# Figure captions
 
 ## Figure 2. SHAP feature importance across charge states
 
@@ -13,7 +13,7 @@ does not establish biological causality or directionality.
 
 ## Figure 3. Historical grouped Euclidean UMAP
 
-Historical UMAP projection of grouped SHAP values for each bacterial target:
+UMAP projection of grouped SHAP values for each bacterial target:
 (A) *E. coli* TG1, (B) *P. aeruginosa* PAO-1, and (C) *K. pneumoniae* ATCC
 13833. Each point represents one candidate analog and is colored by cationic
 charge. Descriptors were grouped from their charge-dependent mean signed SHAP
@@ -32,3 +32,5 @@ shown for each target- and charge-specific surrogate. Values were normalized
 to sum to one within each model to permit comparison of relative importance
 across libraries. These plots describe the surrogate fitted to archived WEKA
 predictions rather than the serialized WEKA trees.
+
+The E. coli projection includes all 3,918 generated analogs, including 1,874 at charge +5.

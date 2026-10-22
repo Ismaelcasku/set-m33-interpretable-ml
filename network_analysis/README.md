@@ -76,5 +76,9 @@ Each task writes:
 
 The final network visualization in the manuscript was rendered in Gephi 0.10.1
 with a Fruchterman–Reingold layout. This module reproduces the graph topology
-and exports the node/edge tables, but does not claim bitwise reproduction of
-manual Gephi layout coordinates. See `../docs/FIGURE_1_GEPHI.md`.
+and exports the node/edge tables, with final layout rendering in Gephi. See `../docs/FIGURE_1_GEPHI.md`.
+
+
+## Input data
+
+Candidate-selection inputs: package 02 at https://doi.org/10.5281/zenodo.22014734. Use a separate data root for network selection and interpretability.

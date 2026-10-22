@@ -7,6 +7,7 @@ python -m py_compile \
   network_analysis/scripts/run_network_analysis.py \
   leakage_controlled_validation/scripts/*.py \
   post_weka_robustness/scripts/*.py \
+  post_weka_robustness/s2_tables/*.py \
   post_weka_robustness/setm33robust/*.py \
   publication_figures/generate_historical_figures.py
 

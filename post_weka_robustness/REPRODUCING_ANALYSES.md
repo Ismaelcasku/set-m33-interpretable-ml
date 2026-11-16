@@ -2,7 +2,7 @@
 
 E. coli +5 contains 1,874 candidates. The joint E. coli UMAP contains 3,918 candidates. The workflow below fits the +5 surrogate, calculates its SHAP values and projects the joint E. coli grouped-SHAP matrix. The other charge-specific SHAP arrays and other-organism projections are loaded from package 05.
 
-Use the pinned post-WEKA environment. Extract packages 02 and 05 matching this code revision. The earlier deposit at 10.5281/zenodo.20530642 predates the corrected K. pneumoniae +5 input; see [prediction provenance](data/DATA_PROVENANCE.md). The candidate root below is the nested `Candidate_libraries` folder in package 02. Run from `post_weka_robustness/`.
+Use the pinned post-WEKA environment. Extract packages 02 and 05 from the [published data version](https://doi.org/10.5281/zenodo.24281130). See [prediction provenance](data/DATA_PROVENANCE.md). The candidate root below is the nested `Candidate_libraries` folder in package 02. Run from `post_weka_robustness/`.
 
 ```bash
 python scripts/prepare_complete_library.py \

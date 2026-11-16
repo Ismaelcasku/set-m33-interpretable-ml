@@ -2,7 +2,7 @@
 
 GitHub contains analysis code, configuration, environment files, tests and publication-figure material. Zenodo contains study data, fitted models and numerical outputs.
 
-Study-data archive: https://doi.org/10.5281/zenodo.20530642
+Study-data archive: https://doi.org/10.5281/zenodo.24281130
 
 | Package | Contents |
 |---|---|

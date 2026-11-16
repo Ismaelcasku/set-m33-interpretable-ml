@@ -12,7 +12,7 @@ Code for “Interpretable machine learning identifies target-dependent predictiv
 
 ## Data
 
-Study data and numerical outputs: https://doi.org/10.5281/zenodo.20530642
+Study data and numerical outputs: https://doi.org/10.5281/zenodo.24281130
 
 Interpretability includes 3,918 E. coli analogs (1,874 at charge +5), 5,383 P. aeruginosa analogs and 1,174 K. pneumoniae analogs. Candidate-selection inputs are available in package 02 at https://doi.org/10.5281/zenodo.22014734. These two analyses use separate data roots.
 

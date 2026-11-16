@@ -84,7 +84,7 @@ def main():
                 ax.set_yticks(np.arange(len(top)),top.index,fontsize=9);ax.set(xlabel='Relative mean |SHAP|',title=f'{title}, +{charge}')
                 ax.spines[['top','right']].set_visible(False);pdf.savefig(fig,bbox_inches='tight')
                 save(fig,detailed/f'{species}_{charge}plus_top20')
-    (out/'FIGURE_SCOPE.txt').write_text('Figure 2: top ten descriptors ranked by mean relative absolute SHAP across charges; missing selected-pool descriptors shown as zero. Figure 3: stored primary Euclidean UMAP, no refit or coordinate alignment. E. coli updated; other organisms reused from copied archived outputs. S4: eleven individual top-20 panels. Label design follows the supplied manuscript; review final rendering before insertion.\n')
+    (out/'FIGURE_SCOPE.txt').write_text('Figure 2: top ten descriptors ranked by mean relative absolute SHAP across charges; missing selected-pool descriptors shown as zero. Figure 3: stored primary Euclidean UMAP, no refit or coordinate alignment. Panels use the supplied primary projections; see the data provenance for the prediction revision. S4: eleven individual top-20 panels. Label design follows the supplied manuscript; review final rendering before insertion.\n')
     print(f'Figures completed in {out}',flush=True)
 
 if __name__=='__main__':main()

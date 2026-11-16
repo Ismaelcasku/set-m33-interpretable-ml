@@ -1,6 +1,6 @@
 # Publication figures
 
-Current Figures 2/3 and supplementary SHAP panels are in `figures/`. Figure 2 source tables are `figures/*_Figure2_values.csv` and `*_relative_SHAP_all.csv`; Figure 3 coordinates are in `source_data/historical_umap/`. E. coli includes 3,918 candidates; its +5 surrogate includes 1,874. 
+Current Figures 2/3 and supplementary SHAP panels are in `figures/`. Figure 2 source tables are `figures/*_Figure2_values.csv` and `*_relative_SHAP_all.csv`; Figure 3 coordinates are in `source_data/historical_umap/`. E. coli includes 3,918 candidates; its +5 surrogate includes 1,874. The K. pneumoniae panel includes 1,174 candidates and was regenerated using the corrected +5 attributions (211 candidates).
 
 The generator renders the SHAP arrays and primary projection coordinates as PNG, SVG and PDF files.
 

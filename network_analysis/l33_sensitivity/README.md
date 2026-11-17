@@ -1,0 +1,7 @@
+# PageRank and L33 similarity sensitivity analysis
+
+The archived node IDs, network communities, PageRank values and MIC ordering are held fixed. L33 is excluded from the scored nodes if present. Each script validates reconstructed edges and weights against the archive before measuring negative mean absolute standardized descriptor differences to L33. Module rank is assigned by historical mean predicted MIC; an undefined correlation stays missing and does not promote the next module to first place. Spearman's rho requires at least three members and variation in both quantities.
+
+Run `bash run.sh /path/to/extracted/l33_data /path/to/new_results` with Python 3, NumPy, pandas, SciPy and scikit-learn. Use the accompanying archived inputs, with SHA-256 checksums in the data bundle. The manuscript comparison uses the full descriptor pool and the archived SHAP rankings as a sensitivity check, substituting the updated +5 rankings where available. The earlier pilot SHAP inputs for P. aeruginosa and K. pneumoniae are also included to show how the preliminary comparison was obtained. SHAP rankings are intersected with the actual descriptors in the network.
+
+Outputs report one row per module and descriptor set. `mic_rank=1` denotes the actual lowest-MIC module, whether or not Spearman's rho can be calculated. In P. aeruginosa +4 its PageRank is constant. `paer_kpn_pilot_shap.csv` is an audit of the previous exploratory inputs, not the manuscript SHAP reference.

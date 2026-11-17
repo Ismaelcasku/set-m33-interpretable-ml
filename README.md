@@ -4,7 +4,8 @@ Code for “Interpretable machine learning identifies target-dependent predictiv
 
 ## Contents
 
-- `network_analysis/`: physicochemical similarity networks and candidate selection.
+- `network_analysis/`: physicochemical similarity networks, candidate selection, and PageRank–L33 analysis (Table S6).
+- `scaffold_transfer/`: within-charge linear-to-tetramer rank concordance, network coverage and per-peptide ranks (Tables S7–S8).
 - `leakage_controlled_validation/`: paired global and nested feature-selection validation.
 - `post_weka_robustness/`: surrogate fidelity, SHAP, grouped-SHAP UMAP and robustness analyses.
 - `post_weka_robustness/s2_tables/`: effective dimensionality and charge-dependent PCA/UMAP metrics for Tables S2.1–S2.3.
